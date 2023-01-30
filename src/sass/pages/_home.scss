@@ -1,0 +1,40 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/weather/default.jpg");
+  background-size: cover;
+  transition: 500ms;
+}
+
+@media (min-width: 72em) {
+  .page {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
+
+.page.clear {
+  background-image: url("../../images/weather/clear.jpg");
+}
+
+.page.clouds {
+  background-image: url("../../images/weather/clouds.jpg");
+}
+
+.page.rain {
+  background-image: url("../../images/weather/rain.jpg");
+}
+
+.page.snow {
+  background-image: url("../../images/weather/snow.jpg");
+}
+
+.page.mist {
+  background-image: url("../../images/weather/mist.jpg");
+}
+
+.page.extreme {
+  background-image: url("../../images/weather/extreme.jpg");
+}

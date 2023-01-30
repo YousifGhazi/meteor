@@ -1,0 +1,149 @@
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  min-height: 85px;
+  margin: 1rem auto 0rem;
+  background-color: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (min-width: 72em) {
+  .search {
+    position: absolute;
+    align-content: flex-start;
+    max-width: 35vw;
+    height: 100vh;
+    margin: 0;
+    padding-left: 4rem;
+    right: 0%;
+    top: 0%;
+    border-radius: 0px;
+  }
+}
+
+.search-icon {
+  font-size: 25px;
+  padding: 1.725rem;
+  background-color: var(--default-clr);
+  user-select: none;
+  cursor: pointer;
+}
+
+.search-icon:active {
+  transform: scale(0.98);
+}
+
+.page.clear .search-icon {
+  background-color: var(clear-clr);
+}
+
+.page.clouds .search-icon {
+  background-color: var(--cloud-clr);
+}
+
+.page.rain .search-icon {
+  background-color: var(--rain-clr);
+}
+
+.pag.snow .search-icon {
+  background-color: var(--snow-clr);
+}
+
+.page.mist {
+  background-color: var(--mist-clr);
+}
+
+.page.extreme {
+  background-color: var(--extreme-clr);
+}
+
+.search-bar {
+  flex: 1;
+  align-self: center;
+  padding: 1rem;
+}
+
+@media (min-width: 72em) {
+  .search-bar {
+    align-self: flex-end;
+    padding: 0rem;
+  }
+}
+
+.search-bar input {
+  width: 90%;
+  padding-bottom: 0.75rem;
+  font-size: 1.5rem;
+  color: var(--text-clr);
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--text-clr);
+}
+
+@media (min-width: 72em) {
+  .search-bar input {
+    width: 85%;
+  }
+}
+
+.search-bar input::placeholder {
+  color: var(--text-clr);
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-history {
+  display: none;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+@media (min-width: 72em) {
+  .search-history {
+    display: block;
+    margin-top: 4rem;
+  }
+}
+
+.search-history h2 {
+  color: rgba(234, 228, 228, 0.9);
+  padding-bottom: 2rem;
+  letter-spacing: 0.8px;
+}
+
+.search-history > ul {
+  max-height: 30rem;
+  overflow-y: scroll;
+}
+.search-history > ul::-webkit-scrollbar {
+  width: 10px;
+}
+.search-history > ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+.search-history > ul::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+.search-history > ul li {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  color: var(--text-clr);
+  transition: 300ms color;
+}
+
+.search-history > ul li:hover {
+  color: var(--white-clr);
+}
+
+@media (min-width: 72em) {
+  .search-history > ul li {
+    margin-bottom: 2.5rem;
+  }
+}

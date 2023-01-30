@@ -1,0 +1,49 @@
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  color: var(--white-clr);
+}
+
+@media (min-width: 72em) {
+  .weather-info {
+    flex-direction: row;
+    margin: 8rem;
+    gap: 1rem;
+  }
+}
+
+.temperature {
+  font-size: 8rem;
+}
+
+@media (min-width: 72em) {
+  .temperature {
+    font-size: 10rem;
+  }
+}
+
+.location {
+  font-size: min(12vw, 4rem);
+  text-transform: capitalize;
+  text-align: center;
+}
+.date-time {
+  font-size: min(8vw, 1.25rem);
+  text-align: center;
+}
+
+.weather-icon {
+  padding: 1rem 0rem;
+  margin: auto;
+  height: 80px;
+  color: var(--white-clr);
+}
+
+.weather-status {
+  display: block;
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: capitalize;
+}

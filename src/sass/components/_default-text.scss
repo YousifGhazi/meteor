@@ -1,0 +1,21 @@
+.default-text {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin: auto 0;
+  padding: 3rem;
+  color: var(--white-clr);
+}
+
+.default-text h1 {
+  font-size: 8vw;
+  text-align: center;
+}
+
+@media (min-width: 72em) {
+  .default-text h1 {
+    max-width: 40vw;
+    font-size: 6vw;
+    text-align: start;
+  }
+}

@@ -1,0 +1,14 @@
+@use "../abstracts/index" as *;
+
+:root {
+  --white-clr: rgb(255, 255, 255);
+  --black-clr: rgb(2, 2, 2);
+  --text-clr: rgba(255, 255, 255, 0.6);
+  --default-clr: rgb(143, 216, 253);
+  --cloud-clr: rgb(217, 121, 32);
+  --rain-clr: rgb(129, 160, 154);
+  --clear-clr: rgb(168, 204, 224);
+  --snow-clr: rgb(235, 235, 235);
+  --mist-clr: rgb(175, 210, 230);
+  --extreme-clr: hsl(34, 100%, 76%);
+}
