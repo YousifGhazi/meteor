@@ -1,4 +1,4 @@
-Visit the website [here](http://YousifGhazi.github.io/weather-app).
+Visit the website [here](http://YousifGhazi.github.io/meteor).
 
 ## Scripts
 
